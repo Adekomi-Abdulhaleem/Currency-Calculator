@@ -1,0 +1,75 @@
+body {padding: 0;
+      margin: 0;
+      background-color: rgba(129, 186, 239, 0.2);
+}
+
+h1 {color: #65A7F3;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+main {display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.app-container {width: 80%;
+                height: 70vh;
+                background-color: white;
+                border-radius: 10px;
+                padding: 30px 0;
+                box-sizing: border-box;
+}
+
+.inputs {width: 80%;
+         height: 35px;
+         border-radius: 50px;
+         outline: none;
+         margin: 10px;
+         padding: 0 10px;
+         margin-bottom: 30px;
+         box-sizing: border-box;
+         border: 1px solid #777777;
+}
+
+.inputs:hover {border: 2px solid #65A7F3;
+}
+label {margin: 20px;
+       font-size: 20px;
+       font-family: cursive;
+}
+
+
+h3 {text-align: center;
+    padding: 0 10px;
+    font-weight: 100;
+    color: #65A7F3;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#calculate {padding: 10px 20px;
+            background-color: #65A7F3;
+            border: none;
+            outline: none;
+            color: white;
+            margin-left: 20px;
+            border-radius: 5px;
+}
+
+
+@media (min-width:700px) {
+    .app-container {width: 65%;
+    }
+}
+
+@media (min-width:900px) {
+    .app-container {width: 45%;
+    }
+}
+
+@media (min-width:1025px) {
+    .app-container {width: 35%;
+    }
+}

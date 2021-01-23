@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Calculator</title>
+    <link rel="stylesheet" href="../Currency-Calculator/style.css">
+</head>
+<body>
+    <header>
+        <h1>Change your Currency</h1>
+    </header>
+    <main>
+        <div class="app-container">
+
+
+            <label for="amount">Input Amount</label> <br>
+            <input type="text" id="amount" placeholder="How much do you want to change?" class="inputs">
+            <br>
+
+
+            <label for="initial-currency">Your Currency</label> <br>
+            <select name="initial-currency" id="initial-currency" class="inputs">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <br>
+
+
+            <label for="final-currency">New Currency</label> <br>
+            <select name="final-currency" id="final-currency" class="inputs">
+                <option value="NGN">NGN</option>
+                <option value="KES">KES</option>
+                <option value="GHS">GHS</option>
+            </select>
+            <br>
+
+            <h3 id="answer"></h3>
+
+            <button id="calculate">Convert</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <script src="../Currency-Calculator/app.js"></script>
+</body>
+</html>
