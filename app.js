@@ -90,11 +90,11 @@ calculate.addEventListener('click', () => {
 })
 
 send.addEventListener('click', () => {
-    if (initial.value == 'EUR' && final.value == 'NGN') {
+    if (initial.value == 'EUR' && final.value == 'NGN' && amount.value >= 150 && amount.value <= 10000) {
         sendLink.href = `https://widget.safecurrency.com/?amount=${parseInt(amount.value)/1.04}&currencyFrom=BTC&currencyTo=EUR&merchant=c89e5bda-4968-4e47-b708-e30d7e9244c8&receiver=merchant&paymentMethod=mastercard&type=buy&orderId=1610437585&currency=fiat`
     }
     else {
-        answer.textContent = `You can only pay in EUR`
+        answer.textContent = `You can only pay in EUR and the price range is 150 - 10000`
         answer.style.color = `red`
     }
 })
