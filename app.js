@@ -8,6 +8,10 @@ var answer = document.getElementById('answer')
 
 var calculate = document.getElementById('calculate')
 
+var send = document.getElementById('send')
+
+var sendLink = document.getElementById('send-link')
+
 
 
 function errorChecker() {
@@ -83,4 +87,14 @@ function mainCalculation() {
 calculate.addEventListener('click', () => {
     errorChecker()
     mainCalculation()
+})
+
+send.addEventListener('click', () => {
+    if (initial.value == 'EUR' && final.value == 'NGN') {
+        sendLink.href = `https://widget.safecurrency.com/?amount=${parseInt(amount.value)/1.04}&currencyFrom=BTC&currencyTo=EUR&merchant=c89e5bda-4968-4e47-b708-e30d7e9244c8&receiver=merchant&paymentMethod=mastercard&type=buy&orderId=1610437585&currency=fiat`
+    }
+    else {
+        answer.textContent = `You can only pay in EUR`
+        answer.style.color = `red`
+    }
 })
