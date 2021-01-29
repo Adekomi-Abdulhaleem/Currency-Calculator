@@ -48,13 +48,13 @@ h3 {text-align: center;
     font-style: italic;
 }
 
-#calculate, #send {padding: 10px 20px;
-            background-color: #65A7F3;
-            border: none;
-            outline: none;
-            color: white;
-            margin-left: 20px;
-            border-radius: 5px;
+#calculate, #send, #barter, #flutter-pay {padding: 10px 20px;
+                                          background-color: #65A7F3;
+                                          border: none;
+                                          outline: none;
+                                          color: white;
+                                          margin-left: 20px;
+                                          border-radius: 5px;
 }
 
 
